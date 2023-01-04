@@ -1,0 +1,20 @@
+nav bar
+Profile header
+About me
+Tweet Feed
+  |----> user tweet post
+  |----> tweets
+Friends
+  |----> Friend Card
+
+
+User Object (prop)
+|->User Name
+|->User Photo
+|->User Profile Link (takes you when you click on name or pic)
+
+
+Tweet Object (prop)
+|->User Object (the person who wrote the tweet. Has all the user info from above)
+|->Tweet Content
+|->Tweet Post Date
