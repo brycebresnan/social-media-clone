@@ -1,6 +1,7 @@
 import React from "react";
 import Tweet from "./Tweet";
 import PostBar from "./PostBar";
+import { Media, Box } from "react-bulma-components";
 
 const tweetFeedList = [
 {
@@ -23,15 +24,17 @@ const tweetFeedList = [
 function TweetFeed(){
   return (
     <React.Fragment> 
-      <PostBar />
-      {tweetFeedList.map((tweet,index) =>
-        <Tweet 
-          photo={tweet.photo}
-          userName={tweet.userName}
-          tweetContent={tweet.tweetContent}
-          key={index}/> 
-        )}
-      </React.Fragment>
+      <Box>
+        <PostBar />
+          {tweetFeedList.map((tweet,index) =>
+            <Tweet 
+              photo={tweet.photo}
+              userName={tweet.userName}
+              tweetContent={tweet.tweetContent}
+              key={index}/> 
+            )}
+      </Box>  
+    </React.Fragment>
   );
 }
 
