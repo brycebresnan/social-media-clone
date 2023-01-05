@@ -30,4 +30,3 @@ FriendSuggestion.propTypes = {
 };
 
 export default FriendSuggestion;
-

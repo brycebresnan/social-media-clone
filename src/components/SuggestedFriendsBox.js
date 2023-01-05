@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "react-bulma-components";
+import { Box, Content } from "react-bulma-components";
 import FriendSuggestion from "./FriendSuggestion.js";
 
 const friendsList = [
@@ -15,7 +15,7 @@ const friendsList = [
   },
   {
     photo: "https://www.boredpanda.com/blog/wp-content/uploads/2020/05/95300455_670356770193037_3290717106967354931_n-5eceb36b830f4__700.jpg",
-    userName: "!!!!!!!",
+    userName: "Introduction to Circuit Analysis",
     addFriendLink: ""
   }
   ];
@@ -23,6 +23,9 @@ const friendsList = [
 function SuggestedFriendsBox() {
   return (
     <React.Fragment>
+      <Content>
+        <h4>Dogs You May Know:</h4>
+      </Content>
       <Box>
         {friendsList.map((friend,index) =>
           <FriendSuggestion 
